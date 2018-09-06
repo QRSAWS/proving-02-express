@@ -4,7 +4,7 @@ var fs = require('fs');
  //Lets define a port we want to listen to
 var PORT=8080;
  //We need a function which handles requests and send response
-function handleRequest(request, response){
+function handleRequest(req, res){
  
 
  	fs.readFile("index.html", function(err, data){
